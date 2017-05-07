@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Super Buffet</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  </head>
+  <body>
+    <style>
+    body, html {
+        height: 100%;
+    }
+
+    /* The hero image */
+    .hero-image {
+        /* The image used */
+        background-image: url("http://img.grouponcdn.com/mpp/cL48MAqVrG7mBpEVfCs2ct/food-and-drink_chinese-01-1600x350/v1/c1600x350.jpg");
+
+        /* Set a specific height */
+        height: 15%;
+
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* Place text in the middle of the image */
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    </style>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Super Buffet</h1>
+      </div>
+    </div>
+    <div class="row">
+      &nbsp;
+    </div>
+    <div class="container-fluid">
+      <br><br>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="well well-lg"><h4>
+          Open since 1998, we are a no frills, family friendly buffet restaurant offering mostly Chinese food, with some sushi options, and a wide range of desserts like fresh fruit and ice cream!
+          <br><br>
+          Stop by with your family and friends for our all-you-can-eat lunch or dinner buffet. Alternatively, we offer fresh hot food from the buffet for take out by weight or take out a la carte service.
+          <br><br>
+          With more than 60+ items ranging from fan favorite staples like General Tso's Chicken to seafood options like crab legs, there is something for everyone!
+          <br><br>
+          We also offer catering services. Please call us for details.
+          <br>
+        </h4></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-2 col-md-offset-2">
+          <div class="panel panel-primary">
+            <div class="panel-heading" style="background-image: none; background-color: #5CA395;"><b>Lunch (Mon-Sat)</b></div>
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="badge">$8.59</span>
+                  Adult
+                </li>
+                <li class="list-group-item">
+                  <span class="badge">$5.29</span>
+                  Kids
+                </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-2">
+        <div class="panel panel-primary">
+          <div class="panel-heading" style="background-image: none; background-color: #1A513A;"><b>Dinner (Mon-Thu)</b></div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="badge">$11.99</span>
+                Adult
+              </li>
+              <li class="list-group-item">
+                <span class="badge">$8.59</span>
+                Kids
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-2">
+        <div class="panel panel-primary">
+          <div class="panel-heading" style="background-image: none; background-color: #1A513A;"><b>Dinner (Fri-Sat)</b></div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="badge">$12.99</span>
+                Adult
+              </li>
+              <li class="list-group-item">
+                <span class="badge">$8.59</span>
+                Kids
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-2">
+        <div class="panel panel-primary">
+          <div class="panel-heading" style="background-image: none; background-color: #1A513A;"><b>All day (Sun)</b></div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="badge">$11.99</span>
+                Adult
+              </li>
+              <li class="list-group-item">
+                <span class="badge">$8.59</span>
+                Kids
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-md-offset-2">
+      <small>* please note that prices are subject to change on holidays</small>
+    </div>
+  </div>
+  <div class="col-md-12" style="background-color: #833916; color: #D8D9D1; font-family:new century schoolbook;">
+      <div class="col-md-5 col-md-offset-1">
+      <br>
+      <h1>Super Buffet<br><small style="color: #D8D9D1">All-you-can-eat dine in or take out</small></h1>
+      <br>
+      <i class="fa fa-phone" aria-hidden="true"></i> (914) 422-3470
+      <br>
+      <i class="fa fa-map-marker" aria-hidden="true"></i>  425 Tarrytown Road, White Plains, NY 10607  <a style="color: #E69E04" href="https://maps.google.com/maps?f=d&daddr=425%20Tarrytown%20Road%2C%20White%20Plains%2C%20NY%2010607">Directions</a>
+      <br>
+      <i class="fa fa-clock-o" aria-hidden="true"></i> Sun-Thu 11:00AM - 10:00PM
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Fri-Sat &nbsp;&nbsp;&nbsp;11:00AM - 11:00PM
+      <br><br>
+      </div>
+      <div class="col-md-5">
+        <br>
+        <iframe
+          width="480"s
+          height="240"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12036.95451578429!2d-73.80269075134275!3d41.041910394226406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf2c15df2e0f42ca0!2sSuper+Buffet!5e0!3m2!1sen!2sus!4v1494122721587" allowfullscreen>
+        </iframe>
+      </div>
+  </div>
+  </body>
+</html>
